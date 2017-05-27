@@ -1,0 +1,54 @@
+.navbar-color{
+	background-color: blue;
+}
+button {
+	width: 152px;
+}
+
+form {
+	display: block;
+}
+
+a{
+	margin-left: 30px;
+}
+.doneButton{
+	background: green !important;
+	color: white;
+	width: 50px;
+}
+
+.list-tasks li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-tasks .content p {
+  font-size: 20px;
+}
+
+.list-tasks .edition {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.btnDelete{
+	margin-right: 0;
+	background: red !important;
+	color: white;
+	width: 50px;
+
+}
+.itemName{
+	font-size: 30px;
+	padding: 5px 50px 5px 50px ;
+}
+.list-group{
+	
+	width: 500px;
+	margin: 0 auto;
+}
+.completed {
+	text-decoration: line-through;
+}

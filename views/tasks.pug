@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .container.container
+   .row
+    .col-md-4
+    .col-md-4
+     h2 
+      form(action='/tasks', method='POST')
+        input(type='text', name='title')
+        button#add.btn.btn-info Add to List!
+  
+   ul.list-group
+     each task in tasks
+      li.list-unstyled.list-users.list-group-item
+        a(href=`/task/${task.id}`) 
+          button#add.btn.btn-info.doneButton done  
+          span.itemName #{task.title}
+        a(href=`/task/${task.id}`)
+          button#add.btn.btn-info.btnDelete.remove  delete
+        form.edit-form(action=`/task/${task.id}`)
+          input.input-lg.hidden(name='edited-name', value=task.title)
+        .edition
+          a.btn.btn-primary.edit
+            i.glyphicon.glyphicon-edit
